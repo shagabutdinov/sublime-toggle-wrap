@@ -1,0 +1,120 @@
+[
+  {
+    "caption": "ToggleWrap: Remove wrap",
+    "command": "toggle_wrap",
+    "args": {
+      "source": [["\"", "\""], ["`", "`"], ["'", "'"], ["(", ")"], ["[", "]"], ["{", "}"]],
+      "target": ["", ""]
+    }
+  },
+
+  {
+    "caption": "ToggleWrap: Clean brackets forward",
+    "command": "run_macro_file",
+    "args": {
+      "file": "Packages/ToggleWrap/macro/clean_brackets_forward.sublime-macro"
+    }
+  },
+
+  {
+    "caption": "ToggleWrap: Clean quotes forward",
+    "command": "run_macro_file",
+    "args": {
+      "file": "Packages/ToggleWrap/macro/clean_quotes_forward.sublime-macro"
+    }
+  },
+
+  {
+    "caption": "ToggleWrap: Clean brackets backward",
+    "command": "run_macro_file",
+    "args": {
+      "file": "Packages/ToggleWrap/macro/clean_brackets_backward.sublime-macro"
+    }
+  },
+
+  {
+    "caption": "ToggleWrap: Clean quotes backward",
+    "command": "run_macro_file",
+    "args": {
+      "file": "Packages/ToggleWrap/macro/clean_quotes_backward.sublime-macro"
+    }
+  },
+
+  {
+    "caption": "ToggleWrap: Change to ''",
+    "command": "toggle_wrap",
+    "args": {
+      "source": [["\"", "\""], ["`", "`"], [":", ""], ["", ":"]],
+      "target": ["'", "'"],
+      "escape": ["'"],
+      "unescape": ["\"", "`"]
+    }
+  },
+
+  {
+    "caption": "ToggleWrap: Change to \"\"",
+    "command": "toggle_wrap",
+    "args": {
+      "source": [["'", "'"], ["`", "`"], [":", ""], ["", ":"]],
+      "target": ["\"", "\""],
+      "escape": ["\""],
+      "unescape": ["'", "`"]
+    }
+  },
+
+  {
+    "caption": "ToggleWrap: Change to preceding :",
+    "command": "toggle_wrap",
+    "args": {
+      "source": [["'", "'"], ["\"", "\""], ["`", "`"], ["", ":"]],
+      "target": [":", ""]
+    }
+  },
+
+  {
+    "caption": "ToggleWrap: Change to following :",
+    "command": "toggle_wrap",
+    "args": {
+      "source": [["'", "'"], ["\"", "\""], ["`", "`"], [":", ""]],
+      "target": ["", ":"]
+    }
+  },
+
+  {
+    "caption": "ToggleWrap: Change to ``",
+    "command": "toggle_wrap",
+    "args": {
+      "source": [["'", "'"], ["\"", "\""], [":", ""], [":", ""]],
+      "target": ["`", "`"],
+      "escape": ["`"],
+      "unescape": ["'", "\""]
+    }
+  },
+
+  {
+    "caption": "ToggleWrap: Change to ()",
+    "command": "toggle_wrap",
+    "args": {
+      "source": [["(", ")"], ["[", "]"], ["{", "}"]],
+      "target": ["(", ")"]
+    }
+  },
+
+  {
+    "caption": "ToggleWrap: Change to {}",
+    "command": "toggle_wrap",
+    "args": {
+      "source": [["(", ")"], ["[", "]"], ["{", "}"]],
+      "target": ["{", "}"]
+    }
+  },
+
+  {
+    "caption": "ToggleWrap: Change to []",
+    "command": "toggle_wrap",
+    "args": {
+      "source": [["(", ")"], ["[", "]"], ["{", "}"]],
+      "target": ["[", "]"]
+    }
+  }
+]

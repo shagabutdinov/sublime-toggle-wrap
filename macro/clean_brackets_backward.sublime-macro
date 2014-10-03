@@ -1,0 +1,24 @@
+[
+  {
+    "command": "run_macro_file",
+    "args": {
+      "file": "Packages/Expression/macro/select_over_brackets_backward.sublime-macro"
+    }
+  },
+
+  {
+    "command": "toggle_wrap",
+    "args": {
+      "source": [["(", ")"], ["[", "]"], ["{", "}"]],
+      "target": ["", ""]
+    }
+  },
+
+  {
+    "command": "move",
+    "args": {
+      "by": "characters",
+      "forward": true
+    }
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "command": "goto_expression",
+    "args": {
+      "expression": "(?:[\\s\\S]|^)()\\w?([\"'`])",
+      "expand": true,
+      "options": {
+        "tokens": false,
+        "range": [1024, 0],
+        "backward": true,
+        "start": [1]
+      }
+    },
+  },
+
+  {
+    "command": "toggle_wrap",
+    "args": {
+      "source": [["\"", "\""], ["`", "`"], ["'", "'"]],
+      "target": ["", ""]
+    }
+  },
+
+  {
+    "command": "move",
+    "args": {
+      "by": "characters",
+      "forward": true
+    }
+  }
+]
