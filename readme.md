@@ -6,7 +6,7 @@ remove wrap.
 
 ### Demo
 
-![Demo](https://raw.github.com/shagabutdinov/sublime-toggle-wrap/master/demo/demo.gif "Demo")
+![Demo](https://github.com/shagabutdinov/sublime-enhanced-demos/raw/master/toggle_wrap.gif "Demo")
 
 
 ### Installation
@@ -63,3 +63,8 @@ package.
 | Change to ()             | (                 | ToggleWrap: Change to ()             |
 | Change to {}             | {                 | ToggleWrap: Change to {}             |
 | Change to []             | [                 | ToggleWrap: Change to []             |
+
+
+### Dependencies
+
+None

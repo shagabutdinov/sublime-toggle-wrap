@@ -7,6 +7,7 @@
       "target": ["", ""],
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": false, "match_all": true},
       {"key": "following_text_begin", "operator": "regex_contains", "operand": "^[({\\[\"'`]", "match_all": true},
       {"key": "preceding_text_end", "operator": "regex_contains", "operand": "[)}\\]\"'`]$", "match_all": true},
@@ -20,7 +21,8 @@
       "file": "Packages/ToggleWrap/macro/clean_brackets_forward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b", "operator": "not_regex_contains", "operand": "comment|string"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
       {"key": "selection_empty", "operator": "equal", "operand": true},
       {"key": "following_text", "operator": "regex_contains", "operand": "^[({\\[][^)}\\]]"},
     ],
@@ -33,8 +35,9 @@
       "file": "Packages/ToggleWrap/macro/clean_quotes_forward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b_left", "operator": "not_regex_contains", "operand": "comment|string"},
-      {"key": "scope_b_right", "operator": "regex_contains", "operand": "comment|string"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b_left", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
+      {"key": "scope_b_right", "operator": "regex_contains", "operand": "comment|symbol|string"},
       {"key": "following_text_b", "operator": "regex_contains", "operand": "^\\w?[\"'`][^\"'`]"},
     ],
   },
@@ -46,7 +49,8 @@
       "file": "Packages/ToggleWrap/macro/clean_brackets_backward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b", "operator": "not_regex_contains", "operand": "comment|string"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
       {"key": "selection_empty", "operator": "equal", "operand": true},
       {"key": "preceding_text", "operator": "regex_contains", "operand": "[^({\\[][)}\\]]$"},
     ],
@@ -59,8 +63,9 @@
       "file": "Packages/ToggleWrap/macro/clean_quotes_backward.sublime-macro"
     },
     "context": [
-      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|string"},
-      {"key": "scope_b_left", "operator": "regex_contains", "operand": "comment|string"},
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "comment|symbol|string"},
+      {"key": "scope_b_left", "operator": "regex_contains", "operand": "comment|symbol|string"},
       {"key": "preceding_text_b", "operator": "regex_contains", "operand": "[^\"'`][\"'`]\\s*$"},
     ],
   },
@@ -75,6 +80,7 @@
       "unescape": ["\"", "`"],
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": false, "match_all": true},
       {"key": "text", "operator" : "regex_contains", "operand": "^(\"|:|`)[\\s\\S]*(\"|:|`)$", "match_all": true},
     ]
@@ -90,6 +96,7 @@
       "unescape": ["'", "`"],
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": false, "match_all": true},
       {"key": "text", "operator" : "regex_contains", "operand": "^('|:|`)[\\s\\S]*('|:|`)$", "match_all": true},
     ]
@@ -103,6 +110,7 @@
       "target": [":", ""],
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": false, "match_all": true},
       {"key": "text", "operator" : "regex_contains", "operand": "^('|\"|'|:|`)", "match_all": true}
     ]
@@ -116,6 +124,7 @@
       "target": ["", ":"],
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": false, "match_all": true},
       {"key": "text", "operator" : "regex_contains", "operand": "^('|\"|'|:|`)", "match_all": true}
     ]
@@ -131,6 +140,7 @@
       "unescape": ["'", "\""],
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": false, "match_all": true},
       {"key": "text", "operator" : "regex_contains", "operand": "^('|\"|:)[\\s\\S]*('|\"|:)$", "match_all": true}
     ]
@@ -144,6 +154,7 @@
       "target": ["(", ")"],
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": false, "match_all": true},
       {"key": "text", "operator" : "regex_contains", "operand": "^(\\[|\\{)[\\s\\S]+(\\]|\\})$", "match_all": true}
     ]
@@ -157,6 +168,7 @@
       "target": ["{", "}"],
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": false, "match_all": true},
       {"key": "text", "operator" : "regex_contains", "operand": "^(\\[|\\()[\\s\\S]+(\\]|\\))$", "match_all": true}
     ]
@@ -170,6 +182,7 @@
       "target": ["[", "]"],
     },
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "selection_empty", "operator": "equal", "operand": false, "match_all": true},
       {"key": "text", "operator" : "regex_contains", "operand": "^(\\(|\\{)[\\s\\S]+(\\)|\\})$", "match_all": true}
     ]
