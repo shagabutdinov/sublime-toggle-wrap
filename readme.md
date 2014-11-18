@@ -57,7 +57,7 @@ package.
 | Clean quotes backward    | ctrl+backspace    | ToggleWrap: Clean quotes backward    |
 | Change to ''             | '                 | ToggleWrap: Change to ''             |
 | Change to ""             | "                 | ToggleWrap: Change to ""             |
-| Change to ``             | `                 | ToggleWrap: Change to ``             |
+| Change to \`\`           | \`                | ToggleWrap: Change to \`\`           |
 | Change to preceding :    | :                 | ToggleWrap: Change to preceding :    |
 | Change to following :    | ;                 | ToggleWrap: Change to following :    |
 | Change to ()             | (                 | ToggleWrap: Change to ()             |
